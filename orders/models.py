@@ -15,7 +15,7 @@ class Order(models.Model):
         """
         Send e-mail to current user
         """
-        email = EmailMessage('Irden', 'Irden', to=['forrana@gmail.com'])
+        email = EmailMessage('Irden', 'Hi, '+self.client_name, to=[self.email])
         email.send()
         self.email_status = 'email sended'
         super(Order, self).save(*args, **kwargs)
