@@ -1,0 +1,5 @@
+Irden fire team
+Hi {{client_name}}
+Your order was accepted.
+Program: {{program_name}}
+Cost: {{cost}}$
