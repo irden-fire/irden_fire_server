@@ -1,8 +1,11 @@
 # irden-fire server
+==============
 ## web-developer forrana (forrana@gmail.com)
 ### Irden web-page server
+## Stack  
 ###### Based on django and django-rest-framework backend server which responsible for keep and manage data, sending e-mails and so on.
 
+## Installation  
 For work with this project you need to install python then pip, then django
 and django-rest-framework  
 After that you need to execute in root of the project next commands:
