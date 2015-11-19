@@ -1,0 +1,9 @@
+Hi guys!
+New order was placed
+Client {{client_name}}
+Phone number {{phone_number}}
+  Chosen programm #{{program_id}}:
+  Program: {{program_name}}
+  Cost: {{cost}}$
+  Date: {{desired_date}}
+Please, react rapidly.

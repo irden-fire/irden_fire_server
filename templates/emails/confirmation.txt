@@ -3,3 +3,6 @@ Hi {{client_name}}
 Your order was accepted.
 Program: {{program_name}}
 Cost: {{cost}}$
+We will connect with you soon!
+Sincerely yours,
+the Irden Team
