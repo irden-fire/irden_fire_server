@@ -96,7 +96,7 @@ DATABASES = {
 REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': ('rest_framework.permissions.AllowAny',),
     'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.LimitOffsetPagination',
-    'PAGE_SIZE': 10
+    'PAGE_SIZE': 5
 }
 
 # Internationalization
@@ -116,8 +116,8 @@ USE_TZ = True
 
 EMAIL_USE_TLS = True
 EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = 'forrana@gmail.com'
-EMAIL_HOST_PASSWORD = 'afhonnywjuphvork'
+EMAIL_HOST_USER = 'irdenfire@gmail.com'
+EMAIL_HOST_PASSWORD = 'Minsk1991'
 EMAIL_PORT = 587
 
 # Static files (CSS, JavaScript, Images)

@@ -25,7 +25,7 @@ class Order(models.Model):
         d = Context({   'client_name': self.client_name,
                         'program_name': self.price.name,
                         'cost': self.price.cost})
-        subject, from_email, to = 'Hello from Irden', 'irden@gmail.com', self.email
+        subject, from_email, to = 'Hello from Irden', 'irdenfire@gmail.com', self.email
         text_content = plaintext.render(d)
         html_content = htmly.render(d)
         msg = EmailMultiAlternatives(subject, text_content, from_email, [to], ['forrana@gmail.com'])
