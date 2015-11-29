@@ -1,7 +1,8 @@
 Hi guys!
 New order was placed
-Client {{client_name}}
-Phone number {{phone_number}}
+Client: {{client_name}}
+Phone number: {{phone_number}}
+Email: {{email}}
   Chosen programm #{{program_id}}:
   Program: {{program_name}}
   Cost: {{cost}}$

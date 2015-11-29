@@ -9,6 +9,7 @@ from rest_framework import generics
 from rest_framework.permissions import AllowAny
 
 class OrdersList(APIView):
+    permission_classes = (AllowAny,) 
     def get(self, request, format=None):
         orders = Order.objects.all()
         serializer = OrderSerializer(orders, many=True)
