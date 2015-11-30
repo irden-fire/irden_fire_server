@@ -1,0 +1,8 @@
+Hi {{client_name}}
+Your user was successfully created.
+You can login, using next credentials:
+  User: {{username}}
+  Password: {{password}}
+
+Sincerely yours,
+  the Irden Team
