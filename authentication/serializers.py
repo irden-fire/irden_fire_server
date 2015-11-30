@@ -18,9 +18,6 @@ class UserSerializerCreate(serializers.ModelSerializer):
         model = User
         fields = ('username', 'password')
 
-#    def create(self, validated_data):
-#        user = User.objects.create_user(**validated_data)
-#        return user
     def create(self, validated_data):
         user = User(username=validated_data['username'])
         user.set_password(validated_data['password'])
@@ -40,7 +37,6 @@ class UserDataSerializer(serializers.ModelSerializer):
 
         if 'user' in validated_data:
             user_info = validated_data.pop('user')
-            #user = User.objects.create(**user_info)
             user = User(username=user_info['username'])
             user.set_password(user_info['password'])
             user.save()
@@ -50,3 +46,12 @@ class UserDataSerializer(serializers.ModelSerializer):
 
         Order.objects.create(user_data = user_data, **order_info[0])
         return user_data
+
+    def update(self, instance, validated_data):
+        order_info = validated_data.pop('orders')
+        instance.client_name = validated_data.get('client_name', instance.email)
+        instance.contact_number = validated_data.get('contact_number', instance.contact_number)
+        instance.email = validated_data.get('email', instance.email)
+        instance.save()
+        Order.objects.create(user_data = instance, **order_info[0])
+        return instance

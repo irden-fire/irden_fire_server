@@ -18,7 +18,13 @@ class CreateUserView(generics.ListCreateAPIView):
     model = User
     serializer_class = UserSerializerCreate
 
-class CreateUserDataView(generics.ListCreateAPIView):
+class CreateUserDataView(generics.CreateAPIView):
+    permission_classes = (AllowAny,)
+    model = UserData
+    serializer_class = UserDataSerializer
+
+class UpdateUserDataView(generics.UpdateAPIView):
+    queryset = UserData.objects.all();  
     permission_classes = (AllowAny,)
     model = UserData
     serializer_class = UserDataSerializer

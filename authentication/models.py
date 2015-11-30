@@ -10,4 +10,4 @@ class UserData(models.Model):
     email = models.CharField(max_length=100, blank=True, default='')
 
     def __str__(self):              # __unicode__ on Python 2
-        return self.reg_date.strftime("%Y-%m-%d %H:%M:%S")
+        return self.reg_date.strftime("%Y-%m-%d %H:%M:%S") + " " + self.email

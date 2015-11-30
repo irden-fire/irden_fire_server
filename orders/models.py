@@ -15,6 +15,6 @@ class Order(models.Model):
     contact_number = models.CharField(max_length=100, blank=True, default='')
     email = models.CharField(max_length=100, blank=True, default='')
     email_status = models.CharField(max_length=100, blank=True, default='')
-    price = models.ForeignKey(Price, related_name="price", default=0)
     desired_date = models.DateTimeField(default=datetime.now, blank=True)
+    price = models.ForeignKey(Price, related_name="price", default=0)
     user_data = models.ForeignKey(UserData, blank=True, null=True, related_name='orders')
