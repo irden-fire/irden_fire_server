@@ -11,9 +11,6 @@ from authentication.models import UserData
 
 class Order(models.Model):
     created = models.DateTimeField(auto_now_add=True)
-    client_name = models.CharField(max_length=100, blank=True, default='')
-    contact_number = models.CharField(max_length=100, blank=True, default='')
-    email = models.CharField(max_length=100, blank=True, default='')
     email_status = models.CharField(max_length=100, blank=True, default='')
     desired_date = models.DateTimeField(default=datetime.now, blank=True)
     price = models.ForeignKey(Price, related_name="price", default=0)

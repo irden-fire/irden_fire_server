@@ -10,6 +10,6 @@ class PricesList(generics.ListCreateAPIView):
     serializer_class = PriceSerializer
 
 class PriceDetail(generics.RetrieveUpdateDestroyAPIView):
-    permission_classes = (AllowAny,)    
+    permission_classes = (AllowAny,)
     queryset = Price.objects.all()
     serializer_class = PriceSerializer
