@@ -11,6 +11,9 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
+# add the irden_fire_server project path into the sys.path
+sys.path.append('/home/forrana/irden_fire_server/irden_fire_server')
+
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "irden_fire_server.settings")
 
 application = get_wsgi_application()
