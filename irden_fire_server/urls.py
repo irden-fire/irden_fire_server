@@ -15,11 +15,13 @@ Including another URLconf
 """
 from django.conf.urls import include, url
 from django.contrib import admin
+from django.views.generic import RedirectView
 
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
     url(r'^', include('feedbacks.urls')),
     url(r'^', include('prices.urls')),
     url(r'^', include('orders.urls')),
-    url(r'^', include('authentication.urls'))
+    url(r'^', include('authentication.urls')),
+    url(r'^', RedirectView.as_view(url='http://www.irden-fireshow.com/'))
 ]
