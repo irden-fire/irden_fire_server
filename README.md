@@ -4,7 +4,13 @@
 ### Irden web-page server
 ## Stack  
 ###### Based on django and django-rest-framework backend server which responsible for keep and manage data, sending e-mails and so on.
-
+## Requirements
+1. sudo apt-get install python 
+2. sudo apt-get install python-pip
+2. pip install djangorestframework
+3. pip install django-filter
+4. pip install django-cors-headers
+5. pip install djangorestframework-jwt
 ## Installation  
 For work with this project you need to install python then pip, then django
 and django-rest-framework  
