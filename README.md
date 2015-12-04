@@ -5,7 +5,8 @@
 ## Stack  
 ###### Based on django and django-rest-framework backend server which responsible for keep and manage data, sending e-mails and so on.
 ## Requirements
-1. sudo apt-get install python 
+1. sudo apt-get install python
+2. sudo apt-get install python-dev
 2. sudo apt-get install python-pip
 2. pip install djangorestframework
 3. pip install django-filter
