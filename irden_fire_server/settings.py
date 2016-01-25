@@ -13,6 +13,7 @@ https://docs.djangoproject.com/en/1.8/ref/settings/
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
 import datetime
+import keyring
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -129,7 +130,7 @@ USE_TZ = True
 EMAIL_USE_TLS = True
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_HOST_USER = 'irdenfire@gmail.com'
-EMAIL_HOST_PASSWORD = 'Minsk1991'
+EMAIL_HOST_PASSWORD = keyring.get_password("google_email", "forrana")
 EMAIL_PORT = 587
 
 # Static files (CSS, JavaScript, Images)

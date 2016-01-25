@@ -23,5 +23,5 @@ urlpatterns = [
     url(r'^', include('prices.urls')),
     url(r'^', include('orders.urls')),
     url(r'^', include('authentication.urls')),
-    url(r'^', RedirectView.as_view(url='http://www.irden-fireshow.com/'))
+    url(r'^', RedirectView.as_view(url='http://www.irden-fireshow.com/', permanent=True))
 ]

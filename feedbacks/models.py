@@ -6,7 +6,7 @@ class Feedback(models.Model):
     message = models.TextField()
     author = models.CharField(max_length=100, blank=True, default='')
     rate = models.IntegerField(blank=False, default=10)
-    email = models.CharField(max_length=100, blank=True, default='')    
+    email = models.CharField(max_length=100, blank=True, default='')
 
     class Meta:
         ordering = ('-rate', '-created')
